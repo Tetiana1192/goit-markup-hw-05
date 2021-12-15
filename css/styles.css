@@ -83,6 +83,10 @@ li {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .forces:hover,
 .site-nav .forces:focus {
@@ -91,6 +95,20 @@ li {
 
 .site-nav .forces.current {
   color: var(--text-accent-color);
+}
+
+.forces.current::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: var(--text-accent-color);
+  display: block;
+  transform: translateY(35px);
+}
+.forces.current.underlining::after {
+  content: "";
+  width: 78px;
+  height: 4px;
 }
 .contacts-list {
   margin: 0;
@@ -112,6 +130,10 @@ li {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-contacts {
@@ -202,6 +224,14 @@ li {
   line-height: 1.62;
   font-family: Roboto;
   padding: 6px 22px;
+
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button.primary.color {
   background-color: var(--text-accent-color);
@@ -217,6 +247,14 @@ li {
   font-family: Roboto;
   padding: 6px 22px;
   cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons .button:hover,
@@ -254,7 +292,9 @@ p {
   padding-top: 20px;
   padding-bottom: 20px;
   display: block;
-  border-radius: 4px;
+}
+img {
+  display: block;
 }
 
 .card-set {
@@ -264,12 +304,17 @@ p {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  border-radius: 4px;
 }
 
 .card-set > .painting {
   flex-basis: calc(100 % / 3-30px);
   margin-left: 30px;
   margin-top: 30px;
+
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-set > .painting:hover {
@@ -357,7 +402,21 @@ p {
   margin-bottom: 50px;
   margin-top: 0px;
 }
-
+.gadgets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.headlines {
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0px;
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
 .clien-list {
   display: flex;
   flex-wrap: nowrap;
@@ -449,6 +508,10 @@ p {
   height: 100%;
   border-radius: 50%;
   fill: #afb1b8;
+  background-color: var(--main-title-color);
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-badges:hover,
 .icon-badges:focus {
@@ -479,6 +542,10 @@ p {
   width: 100%;
   height: 100%;
   fill: #afb1b8;
+
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .emblem {
@@ -562,6 +629,12 @@ p {
 .information {
   margin-top: 6px;
 }
+.content {
+  color: var(--text-accent-color);
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .content:hover,
 .content:focus {
   color: var(--text-accent-color);
@@ -612,6 +685,10 @@ p {
   fill: #ffffff;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-clients:not(:last-child) {
