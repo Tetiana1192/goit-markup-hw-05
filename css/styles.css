@@ -283,6 +283,34 @@ p {
   font-size: 16px;
   line-height: 1.87;
 }
+.page {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.page-text {
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.painting:hover .page-text,
+.painting:focus .ppage-text {
+  overflow: visible;
+  transform: translateY(0);
+}
 
 .image {
   flex-direction: row;
@@ -313,7 +341,6 @@ img {
   margin-top: 30px;
 
   transition-duration: 250ms;
-  transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -402,21 +429,33 @@ img {
   margin-bottom: 50px;
   margin-top: 0px;
 }
-.gadgets {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
+
 .headlines {
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
-  margin: 0px;
-  margin-top: 27px;
-  margin-bottom: 27px;
+  display: flex;
+  color: var(--main-title-color);
+  position: absolute;
+  bottom: 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  width: 370px;
+  margin-bottom: 0px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
+
+.cube {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .clien-list {
   display: flex;
   flex-wrap: nowrap;
