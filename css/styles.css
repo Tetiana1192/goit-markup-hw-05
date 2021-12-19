@@ -206,6 +206,14 @@ li {
   margin-bottom: 50px;
   padding-left: 0px;
   margin-top: 0px;
+
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -223,7 +231,7 @@ li {
   font-size: 16px;
   line-height: 1.62;
   font-family: Roboto;
-  padding: 6px 22px;
+  padding: 10px 32px;
 
   transition-duration: 250ms;
   transition-property: background-color;
@@ -307,7 +315,9 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   top: 0;
   left: 0;
+  margin-top: 0;
 }
+
 .painting:hover .page-text,
 .painting:focus .ppage-text {
   overflow: visible;
@@ -583,10 +593,6 @@ img {
   width: 100%;
   height: 100%;
   fill: #afb1b8;
-
-  transition-duration: 250ms;
-  transition-property: color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .emblem {
@@ -598,7 +604,12 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .emblem:not(:last-child) {
   margin-right: 30px;
 }
@@ -766,7 +777,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
