@@ -585,6 +585,11 @@ img {
   height: 60px;
   margin: 0px;
   padding: 0px;
+
+  transition-duration: 250ms;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 .icon-emblem {
   display: flex;
@@ -595,7 +600,7 @@ img {
   fill: #afb1b8;
 
   transition-duration: 250ms;
-  transition-property: color;
+  transition-property: border-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
